@@ -6,7 +6,7 @@
 	dz=1.,                  ! step size for integration (simple forward Euler)
 	lam_start=1.5616e+04,   ! initial lambda
 	chi_start=4e-4,         ! initial mass flux
-	ea=1.0,                 ! aggregation efficiency
+	ea=0.2,                 ! aggregation efficiency
 	alpha_i=0.,             ! shape factor 0==exponential distribution
 	a_i=6.96,               ! prefactor for fall-speed relation
 	b_i=0.33,               ! exponent for fall-speed relation
