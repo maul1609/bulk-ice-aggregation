@@ -1,6 +1,6 @@
 &input_spec
 	integrate=.true.,       ! flag to do finite difference integration
-	passarelli=.true.,     ! flag for passarelli integral - false does Ferrier
+	passarelli=.true.,      ! flag for passarelli integral - false does Ferrier
 	z_start=5890.,          ! start simulation from this altitude
 	z_end=4000.,            ! end at this altitude
 	dz=1.,                  ! step size for integration (simple forward Euler)
