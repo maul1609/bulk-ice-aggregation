@@ -12,7 +12,7 @@ d_i=1.9;
 gam=1.;
 nax=1.e15;
 
-a=d_i;alpha_i;
+a=d_i+alpha_i;
 b=b_i;
 lam=1;
 
