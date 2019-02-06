@@ -61,7 +61,7 @@
             call hygfx(a, b, real(k,dp)+alpha_i+b_i+1.0_dp, 0.5_dp,f2)
             iice=iice+c(k)*(f1/(real(k,dp)+alpha_i)+f2/(real(k,dp)+alpha_i+b_i))
         enddo
-        iice=a_i*pi*gamma(b)/(2._dp**(6._dp+2._dp*alpha_i+b_i)) * iice
+        iice=pi*gamma(b)/(2._dp**(6._dp+2._dp*alpha_i+b_i)) * iice
 
         
         if(integrate) then
