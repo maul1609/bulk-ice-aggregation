@@ -11,6 +11,5 @@
 doxygen
 papers
 tests
-matlab
 *.dSYM
 
