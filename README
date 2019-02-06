@@ -1,0 +1,5 @@
+Compilation:
+	*Type 'make' to compile.
+Running code:
+	*run the code by typing the following:
+	* single processor: ./main.exe namelist.in
