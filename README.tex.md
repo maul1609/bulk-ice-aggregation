@@ -68,7 +68,7 @@ So the equation describing the mass power moment is
 \begin{multline*}
 \frac{\partial}{\partial t}X\left(t,z \right) =  \int_0 ^\infty m\dot{m}n\left(m,t,z \right) dm - \\
 \frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f right)
-\end{multine*}
+\end{multline*}
 
 
 ### Reflectivity factor Power Moment
