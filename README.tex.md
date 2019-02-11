@@ -15,8 +15,8 @@ run the code by typing the following:
 
 We start with an equation that describes the evolution of the ice crystal number density function (e.g. Passarelli, 1978, Equation 1)
 
-$\begin{array} \frac{\partial}{\partial t}n\left(m,t,z \right)&=-\frac{\partial}{\partial m}\left[\dot{m}n\left(m,t,z \right) \right]-\frac{\partial}{\partial z}\left(\left[ w-v_T\left(m\right)\right]\right)+ \\
-\frac{1}{2}\int _0^m n\left(m-m',t,z\right)n\left(m',t,z\right)k\left(m-m',m'\right)dm' - n\left(m,t,z \right)\int_0^\infty n\left(m',t,z\right)k\left(m,m' \right) dm'\end{array}$
+$\begin{multline} \frac{\partial}{\partial t}n\left(m,t,z \right) =-\frac{\partial}{\partial m}\left[\dot{m}n\left(m,t,z \right) \right]-\frac{\partial}{\partial z}\left(\left[ w-v_T\left(m\right)\right]\right)+ \\
+\frac{1}{2}\int _0^m n\left(m-m',t,z\right)n\left(m',t,z\right)k\left(m-m',m'\right)dm' - n\left(m,t,z \right)\int_0^\infty n\left(m',t,z\right)k\left(m,m' \right) dm'\end{multline}$
 
 
 The effect of aggregation on any moment of the distribution can be described according to Drake (1972, Equation 3.3)
