@@ -56,7 +56,7 @@ Integrating by parts yields
 <p align="center"><img src="/tex/350975a6aefa77fb7457ca40ccdaba6e.svg?invert_in_darkmode&sanitize=true" align=middle width=142.00736715pt height=38.242408049999995pt/></p>
 
 So the equation describing the mass power moment is
-<p align="center"><img src="/tex/f14dba18b45ad53b0376b99ae2a646d4.svg?invert_in_darkmode&sanitize=true" align=middle width=397.5728097pt height=38.242408049999995pt/></p>
+	<p align="center"><img src="/tex/f14dba18b45ad53b0376b99ae2a646d4.svg?invert_in_darkmode&sanitize=true" align=middle width=397.5728097pt height=38.242408049999995pt/></p>
 
 where <img src="/tex/cbfb1b2a33b28eab8a3e59464768e810.svg?invert_in_darkmode&sanitize=true" align=middle width=14.908688849999992pt height=22.465723500000017pt/> is the mass power moment and <img src="/tex/06946a0d85dc86d3ff6e8027e8e7afa7.svg?invert_in_darkmode&sanitize=true" align=middle width=21.318618749999988pt height=22.465723500000017pt/> is the mass flux.
 
@@ -75,11 +75,12 @@ Integrating by parts yields
 <p align="center"><img src="/tex/afe17fb94a8867544fb4c25df1640e77.svg?invert_in_darkmode&sanitize=true" align=middle width=164.6596776pt height=38.242408049999995pt/></p>
 
 So the equation describing the reflectivity factor power moment is
-<p align="center"><img src="/tex/5e04ed97d222731f3b696cdfee198769.svg?invert_in_darkmode&sanitize=true" align=middle width=752.09021085pt height=38.242408049999995pt/></p>
+	<p align="center"><img src="/tex/5e04ed97d222731f3b696cdfee198769.svg?invert_in_darkmode&sanitize=true" align=middle width=752.09021085pt height=38.242408049999995pt/></p>
 
-where <img src="/tex/cbfb1b2a33b28eab8a3e59464768e810.svg?invert_in_darkmode&sanitize=true" align=middle width=14.908688849999992pt height=22.465723500000017pt/> is the mass power moment and <img src="/tex/06946a0d85dc86d3ff6e8027e8e7afa7.svg?invert_in_darkmode&sanitize=true" align=middle width=21.318618749999988pt height=22.465723500000017pt/> is the mass flux.
+where <img src="/tex/5b51bd2e6f329245d425b8002d7cf942.svg?invert_in_darkmode&sanitize=true" align=middle width=12.397274999999992pt height=22.465723500000017pt/> is the reflectivity factor power moment and <img src="/tex/5bc42ce9cabce66c66542c6fb09deba6.svg?invert_in_darkmode&sanitize=true" align=middle width=18.92134859999999pt height=22.465723500000017pt/> is the reflectivity factor flux.
 
 ## Application to modified gamma distributions
+The LHS of the two prognostic equations above are set to zero in order to model the steady-state vertical profile of the power moments.
 
 
 ## References
