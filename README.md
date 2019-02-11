@@ -15,7 +15,7 @@ run the code by typing the following:
 
 We start with an equation that describes the evolution of the ice crystal number density function (e.g. Passarelli, 1978, Equation 1)
 
-<img src="/tex/5bf7b1b8f46dc24c91d4436ccf41b932.svg?invert_in_darkmode&sanitize=true" align=middle width=794.35778895pt height=54.93204089999999pt/>
+<img src="/tex/c7f1fe4855d2cd61cb848e12e781e082.svg?invert_in_darkmode&sanitize=true" align=middle width=974.2754042999999pt height=48.65066249999999pt/>
 
 
 The effect of aggregation on any moment of the distribution can be described according to Drake (1972, Equation 3.3)
