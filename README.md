@@ -4,12 +4,12 @@ A steady-state ice-ice aggregation model, using bulk-microphysics, written in FO
 ## Compilation:
 gfortran should be installed on your system, then:
 
-* Type 'make' to compile.
+	Type 'make' to compile.
 
 ## Running code:
 run the code by typing the following:
 
-* single processor: ./main.exe namelist.in
+	single processor: ./main.exe namelist.in
 
 ## Governing equation
 
@@ -56,11 +56,28 @@ Integrating by parts yields
 <p align="center"><img src="/tex/350975a6aefa77fb7457ca40ccdaba6e.svg?invert_in_darkmode&sanitize=true" align=middle width=142.00736715pt height=38.242408049999995pt/></p>
 
 So the equation describing the mass power moment is
-<p align="center"><img src="/tex/cd37364fc75e0891b174bc3fa8a35cba.svg?invert_in_darkmode&sanitize=true" align=middle width=665.4247809pt height=38.242408049999995pt/></p>
+<p align="center"><img src="/tex/f14dba18b45ad53b0376b99ae2a646d4.svg?invert_in_darkmode&sanitize=true" align=middle width=397.5728097pt height=38.242408049999995pt/></p>
 
+where <img src="/tex/cbfb1b2a33b28eab8a3e59464768e810.svg?invert_in_darkmode&sanitize=true" align=middle width=14.908688849999992pt height=22.465723500000017pt/> is the mass power moment and <img src="/tex/06946a0d85dc86d3ff6e8027e8e7afa7.svg?invert_in_darkmode&sanitize=true" align=middle width=21.318618749999988pt height=22.465723500000017pt/> is the mass flux.
 
 ### Reflectivity factor Power Moment
+The second equation is for the evolution of the the mass-squared, or reflectivity factor power moment is derived from Equation 1 by multiplying by <img src="/tex/89ef0b1086da48459dd5f47ed088933b.svg?invert_in_darkmode&sanitize=true" align=middle width=20.985647099999987pt height=26.76175259999998pt/> and integrating over all positive <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/>.
 
+Its derivation is similar to above. The aggregation integral requires the application for Drake's Equation 3.3 (above), which is equal to 
+
+<p align="center"><img src="/tex/23e34f3bd8a0e4160e47cf8d5bb09046.svg?invert_in_darkmode&sanitize=true" align=middle width=399.19686839999997pt height=38.426788949999995pt/></p>
+
+For the first term on the RHS of Equation 1 we obtain
+
+<p align="center"><img src="/tex/6ca167249ae82620bb0beaba3957ddeb.svg?invert_in_darkmode&sanitize=true" align=middle width=219.23082719999996pt height=38.242408049999995pt/></p>
+
+Integrating by parts yields
+<p align="center"><img src="/tex/afe17fb94a8867544fb4c25df1640e77.svg?invert_in_darkmode&sanitize=true" align=middle width=164.6596776pt height=38.242408049999995pt/></p>
+
+So the equation describing the reflectivity factor power moment is
+<p align="center"><img src="/tex/5e04ed97d222731f3b696cdfee198769.svg?invert_in_darkmode&sanitize=true" align=middle width=752.09021085pt height=38.242408049999995pt/></p>
+
+where <img src="/tex/cbfb1b2a33b28eab8a3e59464768e810.svg?invert_in_darkmode&sanitize=true" align=middle width=14.908688849999992pt height=22.465723500000017pt/> is the mass power moment and <img src="/tex/06946a0d85dc86d3ff6e8027e8e7afa7.svg?invert_in_darkmode&sanitize=true" align=middle width=21.318618749999988pt height=22.465723500000017pt/> is the mass flux.
 
 ## Application to modified gamma distributions
 
