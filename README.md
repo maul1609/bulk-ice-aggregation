@@ -30,11 +30,18 @@ The 3rd term on the RHS of Equation 1 occurs due to aggregation. Firstly, there 
 ## Conservation of Power Moments
 Passarelli (1978) used the 1st and 2nd "mass moments" of the ice particle distribution to describe a steady-state model where ice particles sediment through the atmosphere. They used these moments because they are weighted by the larger ice particles, which can be approximated by negative exponential functions.
 
+### Effect of Aggregation on Power Moments
+The effect of aggregation on any moment of the distribution can be described according to Drake (1972, their Equation 3.3).
+
+They found that, for aggregation only, the rate-of-change of a power moment is given by:
+
+<p align="center"><img src="/tex/38d07316422d9b6b30d9f732645cbe62.svg?invert_in_darkmode&sanitize=true" align=middle width=683.8356162pt height=99.08627024999998pt/></p> 
+
+
 ### Mass Power Moment
 
 ### Reflectivity factor Power Moment
 
-The effect of aggregation on any moment of the distribution can be described according to Drake (1972, Equation 3.3)
 
 ## Application to modified gamma distributions
 
