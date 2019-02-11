@@ -35,7 +35,7 @@ The effect of aggregation on any moment of the distribution can be described acc
 
 They found that, for aggregation only, the rate-of-change of a power moment is given by:
 
-<p align="center"><img src="/tex/38d07316422d9b6b30d9f732645cbe62.svg?invert_in_darkmode&sanitize=true" align=middle width=683.8356162pt height=99.08627024999998pt/></p> 
+<p align="center"><img src="/tex/5f98291f7ff8959ac91e9c04659ed94f.svg?invert_in_darkmode&sanitize=true" align=middle width=664.60282515pt height=39.452455349999994pt/></p> 
 
 
 ### Mass Power Moment
