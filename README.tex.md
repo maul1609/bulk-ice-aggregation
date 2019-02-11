@@ -11,15 +11,35 @@ run the code by typing the following:
 
 * single processor: ./main.exe namelist.in
 
-## Governing equations
+## Governing equation
 
-We start with Equation~\ref{EQ:N_EVOL} that describes the evolution of the ice crystal number density function (e.g. Passarelli, 1978, Equation 1)
+We start with Equation 1, which describes the evolution of the ice crystal number density function (e.g. Passarelli, 1978, Equation 1)
 
-\begin{multline} \frac{\partial}{\partial t}n\left(m,t,z \right) =-\frac{\partial}{\partial m}\left[\dot{m}n\left(m,t,z \right) \right]-\frac{\partial}{\partial z}\left(\left[ w-v_T\left(m\right)\right]\right)+ \\
+\begin{multline} \frac{\partial}{\partial t}n\left(m,t,z \right) =-\frac{\partial}{\partial m}\left[\dot{m}n\left(m,t,z \right) \right]-\frac{\partial}{\partial z}\left{\left[ w-v_T\left(m\right)\right]n\left(m,t,z \right)\right}+ \\
 \frac{1}{2}\int _0^m n\left(m-m',t,z\right)n\left(m',t,z\right)k\left(m-m',m'\right)dm' - n\left(m,t,z \right)\int_0^\infty n\left(m',t,z\right)k\left(m,m' \right) dm' \label{EQ:N_EVOL}\end{multline}
 
+The 1st term on the RHS of Equation 1 represents the change in the size distribution due to vapour growth and derives from the 1-d continuity equation along the mass axis:
+
+\begin{equation}
+\frac{\partial }{\partial t}\psi+\frac{\partial}{\partial m}\dot{m}\psi = 0 
+\end{equation}
+where $\dot{m}$ is the rate-of-change along the mass axis (like a velocity).
+
+The 2nd term on the RHS of Equation 1 represents the vertical transport (and sedimentation) of ice crystals. 
+
+The 3rd term on the RHS of Equation 1 occurs due to aggregation. Firstly, there is a gain integral, which is due to the aggregation of particles of size $m'$ with $m-m'$ to yield particles of mass $m$ (the factor of $\frac{1}{2}$ is to prevent double-counting). Secondly, there is a loss integral, which accounts for the aggregation of particles, mass $m$, with all other particles.
+
+## Conservation of Power Moments
+Passarelli (1978) used the 1st and 2nd "mass moments" of the ice particle distribution to describe a steady-state model where ice particles sediment through the atmosphere. They used these moments because they are weighted by the larger ice particles, which can be approximated by negative exponential functions.
+
+### Mass Power Moment
+
+### Reflectivity factor Power Moment
 
 The effect of aggregation on any moment of the distribution can be described according to Drake (1972, Equation 3.3)
+
+## Application to modified gamma distributions
+
 
 ## References
 Drake, Ronald L. 1972. “The Scalar Transport Equation of Coalescence Theory: Moments and Kernels.” Journal of the Atmospheric Sciences 29 (3): 537–47. doi:10.1175/1520-0469(1972)029<0537:TSTEOC>2.0.CO;2.
