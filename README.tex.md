@@ -14,3 +14,6 @@ run the code by typing the following:
 ## Governing equations
 
 $E=mc^2$
+
+$F=ma$
+
