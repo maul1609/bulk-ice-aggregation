@@ -53,10 +53,10 @@ For the first term on the RHS of Equation 1 we obtain
 <p align="center"><img src="/tex/83e29f3d535ab8e4c8e3fed142ef9fa4.svg?invert_in_darkmode&sanitize=true" align=middle width=211.85636669999997pt height=38.242408049999995pt/></p>
 
 Integrating by parts yields
-<p align="center"><img src="/tex/91a4c2bca42a9626645e5973384871e4.svg?invert_in_darkmode&sanitize=true" align=middle width=156.44046824999998pt height=38.242408049999995pt/></p>
+<p align="center"><img src="/tex/350975a6aefa77fb7457ca40ccdaba6e.svg?invert_in_darkmode&sanitize=true" align=middle width=142.00736715pt height=38.242408049999995pt/></p>
 
 So the equation describing the mass power moment is
-<p align="center"><img src="/tex/adc00c0da31ced4a0c596f18d2f922eb.svg?invert_in_darkmode&sanitize=true" align=middle width=413.1896142pt height=78.62983095pt/></p>
+<p align="center"><img src="/tex/cd37364fc75e0891b174bc3fa8a35cba.svg?invert_in_darkmode&sanitize=true" align=middle width=665.4247809pt height=38.242408049999995pt/></p>
 
 
 ### Reflectivity factor Power Moment
