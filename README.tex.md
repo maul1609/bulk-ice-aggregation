@@ -39,7 +39,7 @@ The effect of aggregation on any moment of the distribution can be described acc
 They found that, for aggregation only, the rate-of-change of a power moment is given by:
 
 \begin{multline*}
-\frac{dM_N\left(t\right)}{dt}=\frac{1}{2}\Sigma _{i=1}^{N-1}\left( begin{matrix}N\\i\end{matrix}\right)\int_0^\infty\int_0^\infty m^i m'^{N-i}k\left(m,m'\right)n\left(m,t \right)n\left(m',t \right)dm dm'
+\frac{dM_N\left(t\right)}{dt}=\frac{1}{2}\Sigma _{i=1}^{N-1}\left( \begin{matrix}N\\i\end{matrix}\right)\int_0^\infty\int_0^\infty m^i m'^{N-i}k\left(m,m'\right)n\left(m,t \right)n\left(m',t \right)dm dm'
 \end{multline*} 
 
 
