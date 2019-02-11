@@ -13,7 +13,7 @@ run the code by typing the following:
 
 ## Governing equations
 
-We start with Equation$~\ref{EQ:N_EVOL} that describes the evolution of the ice crystal number density function (e.g. Passarelli, 1978, Equation 1)
+We start with Equation~\ref{EQ:N_EVOL} that describes the evolution of the ice crystal number density function (e.g. Passarelli, 1978, Equation 1)
 
 \begin{multline} \frac{\partial}{\partial t}n\left(m,t,z \right) =-\frac{\partial}{\partial m}\left[\dot{m}n\left(m,t,z \right) \right]-\frac{\partial}{\partial z}\left(\left[ w-v_T\left(m\right)\right]\right)+ \\
 \frac{1}{2}\int _0^m n\left(m-m',t,z\right)n\left(m',t,z\right)k\left(m-m',m'\right)dm' - n\left(m,t,z \right)\int_0^\infty n\left(m',t,z\right)k\left(m,m' \right) dm' \label{EQ:N_EVOL}\end{multline}
