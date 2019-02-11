@@ -65,7 +65,7 @@ Integrating by parts yields
 \end{equation*}
 
 So the equation describing the mass power moment is
-\begin{equation*}
+	\begin{equation*}
 \frac{\partial}{\partial t}X\left(t,z \right) =  \int_0 ^\infty \dot{m}n\left(m,t,z \right) dm - \frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f \right)
 \end{equation*}
 
@@ -92,13 +92,14 @@ Integrating by parts yields
 \end{equation*}
 
 So the equation describing the reflectivity factor power moment is
-\begin{equation*}
+	\begin{equation*}
 \frac{\partial}{\partial t}Z\left(t,z \right) =  \int_0 ^\infty 2m\dot{m}n\left(m,t,z \right) dm - \frac{\partial}{\partial z}\left(wZ\left(t,z\right) - Z_f \right) + \int_0^\infty\int_0^\infty m m'k\left(m,m'\right)n\left(m,t \right)n\left(m',t \right)dm dm'
 \end{equation*}
 
-where $X$ is the mass power moment and $X_f$ is the mass flux.
+where $Z$ is the reflectivity factor power moment and $Z_f$ is the reflectivity factor flux.
 
 ## Application to modified gamma distributions
+The LHS of the two prognostic equations above are set to zero in order to model the steady-state vertical profile of the power moments.
 
 
 ## References
