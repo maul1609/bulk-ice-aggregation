@@ -37,8 +37,30 @@ They found that, for aggregation only, the rate-of-change of a power moment is g
 
 <p align="center"><img src="/tex/1e58c6f915ea1ead1fa500c4e97b169c.svg?invert_in_darkmode&sanitize=true" align=middle width=536.2292397pt height=47.806078649999996pt/></p> 
 
+where <img src="/tex/32c85c1611cd917a61eb439464bf6f63.svg?invert_in_darkmode&sanitize=true" align=middle width=14.99998994999999pt height=42.52063860000002pt/> are binomial coefficients. 
+
+Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
 
 ### Mass Power Moment
+An equation describing the evolution of the mass power moment is derived from Equation 1 by multiplying by <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/> and integrating over all positive <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/>.
+
+Doing this for the LHS and the 2nd term on the RHS is fairly straightforward.
+
+Doing this for the aggregation integral requires the application for Drake's Equation 3.3 (above), which is equal to zero for <img src="/tex/0676c4ef9983b3ec25648a935e040f70.svg?invert_in_darkmode&sanitize=true" align=middle width=45.13680929999999pt height=22.465723500000017pt/>.
+
+For the first term on the RHS of Equation 1 we obtain
+
+<p align="center"><img src="/tex/83e29f3d535ab8e4c8e3fed142ef9fa4.svg?invert_in_darkmode&sanitize=true" align=middle width=211.85636669999997pt height=38.242408049999995pt/></p>
+
+Integrating by parts yields
+<p align="center"><img src="/tex/91a4c2bca42a9626645e5973384871e4.svg?invert_in_darkmode&sanitize=true" align=middle width=156.44046824999998pt height=38.242408049999995pt/></p>
+
+So the equation describing the mass power moment is
+\begin{multline*}
+\frac{\partial}{\partial t}X\left(t,z \right) =  \int_0 ^\infty m\dot{m}n\left(m,t,z \right) dm - \\
+\frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f right)
+\end{multine*}
+
 
 ### Reflectivity factor Power Moment
 
