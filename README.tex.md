@@ -4,12 +4,12 @@ A steady-state ice-ice aggregation model, using bulk-microphysics, written in FO
 ## Compilation:
 gfortran should be installed on your system, then:
 
-* Type 'make' to compile.
+	Type 'make' to compile.
 
 ## Running code:
 run the code by typing the following:
 
-* single processor: ./main.exe namelist.in
+	single processor: ./main.exe namelist.in
 
 ## Governing equation
 
@@ -65,13 +65,38 @@ Integrating by parts yields
 \end{equation*}
 
 So the equation describing the mass power moment is
-\begin{multline*}
+\begin{equation*}
 \frac{\partial}{\partial t}X\left(t,z \right) =  \int_0 ^\infty \dot{m}n\left(m,t,z \right) dm - \frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f \right)
-\end{multline*}
+\end{equation*}
 
+where $X$ is the mass power moment and $X_f$ is the mass flux.
 
 ### Reflectivity factor Power Moment
+The second equation is for the evolution of the the mass-squared, or reflectivity factor power moment is derived from Equation 1 by multiplying by $m^2$ and integrating over all positive $m$.
 
+Its derivation is similar to above. The aggregation integral requires the application for Drake's Equation 3.3 (above), which is equal to 
+
+\begin{equation*}
+\frac{dZ\left(t\right)}{dt}=\int_0^\infty\int_0^\infty m m'k\left(m,m'\right)n\left(m,t \right)n\left(m',t \right)dm dm'
+\end{equation*}
+
+For the first term on the RHS of Equation 1 we obtain
+
+\begin{equation*}
+-\int_0 ^\infty m^2\frac{\partial}{\partial m}\left[\dot{m}n\left(m,t,z \right) \right] dm
+\end{equation*}
+
+Integrating by parts yields
+\begin{equation*}
+\int_0 ^\infty 2m\dot{m}n\left(m,t,z \right) dm
+\end{equation*}
+
+So the equation describing the reflectivity factor power moment is
+\begin{equation*}
+\frac{\partial}{\partial t}Z\left(t,z \right) =  \int_0 ^\infty 2m\dot{m}n\left(m,t,z \right) dm - \frac{\partial}{\partial z}\left(wZ\left(t,z\right) - Z_f \right) + \int_0^\infty\int_0^\infty m m'k\left(m,m'\right)n\left(m,t \right)n\left(m',t \right)dm dm'
+\end{equation*}
+
+where $X$ is the mass power moment and $X_f$ is the mass flux.
 
 ## Application to modified gamma distributions
 
