@@ -61,13 +61,12 @@ For the first term on the RHS of Equation 1 we obtain
 
 Integrating by parts yields
 \begin{equation*}
-\int_0 ^\infty m\dot{m}n\left(m,t,z \right) dm
+\int_0 ^\infty \dot{m}n\left(m,t,z \right) dm
 \end{equation*}
 
 So the equation describing the mass power moment is
 \begin{multline*}
-\frac{\partial}{\partial t}X\left(t,z \right) =  \int_0 ^\infty m\dot{m}n\left(m,t,z \right) dm - \\
-\frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f right)
+\frac{\partial}{\partial t}X\left(t,z \right) =  \int_0 ^\infty \dot{m}n\left(m,t,z \right) dm - \frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f \right)
 \end{multline*}
 
 
