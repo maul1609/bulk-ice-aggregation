@@ -42,8 +42,34 @@ They found that, for aggregation only, the rate-of-change of a power moment is g
 \frac{dM_N\left(t\right)}{dt}=\frac{1}{2}\sum _{i=1}^{N-1}\left( \begin{matrix}N\\i\end{matrix}\right)\int_0^\infty\int_0^\infty m^i m'^{N-i}k\left(m,m'\right)n\left(m,t \right)n\left(m',t \right)dm dm'
 \end{equation*} 
 
+where $\begin{matrix}N\\i\end{matrix}$ are binomial coefficients. 
+
+Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
 
 ### Mass Power Moment
+An equation describing the evolution of the mass power moment is derived from Equation 1 by multiplying by $m$ and integrating over all positive $m$.
+
+Doing this for the LHS and the 2nd term on the RHS is fairly straightforward.
+
+Doing this for the aggregation integral requires the application for Drake's Equation 3.3 (above), which is equal to zero for $N=1$.
+
+For the first term on the RHS of Equation 1 we obtain
+
+\begin{equation*}
+-\int_0 ^\infty m\frac{\partial}{\partial m}\left[\dot{m}n\left(m,t,z \right) \right] dm
+\end{equation*}
+
+Integrating by parts yields
+\begin{equation*}
+\int_0 ^\infty m\dot{m}n\left(m,t,z \right) dm
+\end{equation*}
+
+So the equation describing the mass power moment is
+\begin{multline*}
+\frac{\partial}{\partial t}X\left(t,z \right) =  \int_0 ^\infty m\dot{m}n\left(m,t,z \right) dm - \\
+\frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f right)
+\end{multine*}
+
 
 ### Reflectivity factor Power Moment
 
