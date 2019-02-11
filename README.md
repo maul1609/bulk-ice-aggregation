@@ -19,7 +19,8 @@ We start with Equation 1, which describes the evolution of the ice crystal numbe
 
 The 1st term on the RHS of Equation 1 represents the change in the size distribution due to vapour growth and derives from the 1-d continuity equation along the mass axis:
 
-<p align="center"><img src="/tex/4dfa5a3fe4b396e9ab9ac7355269a2d5.svg?invert_in_darkmode&sanitize=true" align=middle width=415.56271515pt height=33.81208709999999pt/></p>
+<p align="center"><img src="/tex/adfcb12b2557cc8959ba97ee64216ac8.svg?invert_in_darkmode&sanitize=true" align=middle width=132.8240859pt height=33.81208709999999pt/></p>
+
 where <img src="/tex/49f2f3f276a77f05ce894bf032b41e80.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=21.95701200000001pt/> is the rate-of-change along the mass axis (like a velocity).
 
 The 2nd term on the RHS of Equation 1 represents the vertical transport (and sedimentation) of ice crystals. 
