@@ -56,10 +56,7 @@ Integrating by parts yields
 <p align="center"><img src="/tex/91a4c2bca42a9626645e5973384871e4.svg?invert_in_darkmode&sanitize=true" align=middle width=156.44046824999998pt height=38.242408049999995pt/></p>
 
 So the equation describing the mass power moment is
-\begin{multline*}
-\frac{\partial}{\partial t}X\left(t,z \right) =  \int_0 ^\infty m\dot{m}n\left(m,t,z \right) dm - \\
-\frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f right)
-\end{multine*}
+<p align="center"><img src="/tex/adc00c0da31ced4a0c596f18d2f922eb.svg?invert_in_darkmode&sanitize=true" align=middle width=413.1896142pt height=78.62983095pt/></p>
 
 
 ### Reflectivity factor Power Moment
