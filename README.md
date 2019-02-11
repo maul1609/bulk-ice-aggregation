@@ -13,7 +13,7 @@ run the code by typing the following:
 
 ## Governing equations
 
-We start with Equation~\ref{EQ:EVOL} that describes the evolution of the ice crystal number density function (e.g. Passarelli, 1978, Equation 1)
+We start with Equation<img src="/tex/38aa60501f3832dc076be96d6dc36360.svg?invert_in_darkmode&sanitize=true" align=middle width=17.85378705pt height=22.831056599999986pt/> that describes the evolution of the ice crystal number density function (e.g. Passarelli, 1978, Equation 1)
 
 <p align="center"><img src="/tex/8d1675386a5c538ad0494c1a70fcb3ab.svg?invert_in_darkmode&sanitize=true" align=middle width=681.8630873999999pt height=98.19144225pt/></p>
 
