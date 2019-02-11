@@ -13,7 +13,21 @@ run the code by typing the following:
 
 ## Governing equations
 
-<img src="/tex/ccb175704c18ad5a81177f1274fcd39f.svg?invert_in_darkmode&sanitize=true" align=middle width=63.09925874999999pt height=26.76175259999998pt/>
+We start with an equation that describes the evolution of the ice crystal number density function (e.g. Passarelli, 1978, Equation 1)
 
-<img src="/tex/568c732accfabec7147b0d4003a37f0f.svg?invert_in_darkmode&sanitize=true" align=middle width=57.893807399999986pt height=22.465723500000017pt/>
+<img src="/tex/5bf7b1b8f46dc24c91d4436ccf41b932.svg?invert_in_darkmode&sanitize=true" align=middle width=794.35778895pt height=54.93204089999999pt/>
+
+
+The effect of aggregation on any moment of the distribution can be described according to Drake (1972, Equation 3.3)
+
+## References
+Drake, Ronald L. 1972. “The Scalar Transport Equation of Coalescence Theory: Moments and Kernels.” Journal of the Atmospheric Sciences 29 (3): 537–47. doi:10.1175/1520-0469(1972)029<0537:TSTEOC>2.0.CO;2.
+
+Schoenberg Ferrier, Brad. 1994. “A Double-Moment Multiple-Phase Four-Class Bulk Ice Scheme. Part I: Description.” Journal of the Atmospheric Sciences 51 (2): 249–80. doi:10.1175/1520-0469(1994)051<0249:ADMMPF>2.0.CO;2.
+
+Mitchell, David L. 1988. “Evolution of Snow-Size Spectra in Cyclonic Storms. Part I: Snow Growth by Vapor Deposition and Aggregation.” Journal of the Atmospheric Sciences 45 (22): 3431–51. doi:10.1175/1520-0469(1988)045<3431:EOSSSI>2.0.CO;2.
+
+Passarelli, Richard E. 1978. “An Approximate Analytical Model of the Vapor Deposition and Aggregation Growth of Snowflakes.” Journal of the Atmospheric Sciences 35 (1): 118–24. doi:10.1175/1520-0469(1978)035<0118:AAAMOT>2.0.CO;2.
+
+
 
