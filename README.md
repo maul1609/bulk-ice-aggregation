@@ -37,7 +37,7 @@ They found that, for aggregation only, the rate-of-change of a power moment is g
 
 <p align="center"><img src="/tex/1e58c6f915ea1ead1fa500c4e97b169c.svg?invert_in_darkmode&sanitize=true" align=middle width=536.2292397pt height=47.806078649999996pt/></p> 
 
-where <img src="/tex/32c85c1611cd917a61eb439464bf6f63.svg?invert_in_darkmode&sanitize=true" align=middle width=14.99998994999999pt height=42.52063860000002pt/> are binomial coefficients. 
+where <img src="/tex/f55af2ba7087ae065bd9a49dd5ec815c.svg?invert_in_darkmode&sanitize=true" align=middle width=39.200973899999994pt height=47.6716218pt/> are binomial coefficients. 
 
 Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
 
@@ -56,7 +56,7 @@ Integrating by parts yields
 <p align="center"><img src="/tex/350975a6aefa77fb7457ca40ccdaba6e.svg?invert_in_darkmode&sanitize=true" align=middle width=142.00736715pt height=38.242408049999995pt/></p>
 
 So the equation describing the mass power moment is
-	<p align="center"><img src="/tex/f14dba18b45ad53b0376b99ae2a646d4.svg?invert_in_darkmode&sanitize=true" align=middle width=397.5728097pt height=38.242408049999995pt/></p>
+	<p align="center"><img src="/tex/8b5a0adc4b4b7346c6432b9e8ae283e0.svg?invert_in_darkmode&sanitize=true" align=middle width=397.5727437pt height=38.242408049999995pt/></p>
 
 where <img src="/tex/cbfb1b2a33b28eab8a3e59464768e810.svg?invert_in_darkmode&sanitize=true" align=middle width=14.908688849999992pt height=22.465723500000017pt/> is the mass power moment and <img src="/tex/06946a0d85dc86d3ff6e8027e8e7afa7.svg?invert_in_darkmode&sanitize=true" align=middle width=21.318618749999988pt height=22.465723500000017pt/> is the mass flux.
 
@@ -75,12 +75,36 @@ Integrating by parts yields
 <p align="center"><img src="/tex/afe17fb94a8867544fb4c25df1640e77.svg?invert_in_darkmode&sanitize=true" align=middle width=164.6596776pt height=38.242408049999995pt/></p>
 
 So the equation describing the reflectivity factor power moment is
-	<p align="center"><img src="/tex/5e04ed97d222731f3b696cdfee198769.svg?invert_in_darkmode&sanitize=true" align=middle width=752.09021085pt height=38.242408049999995pt/></p>
+	<p align="center"><img src="/tex/8bd734019deb632b18cdb0cad37d43fb.svg?invert_in_darkmode&sanitize=true" align=middle width=752.09021085pt height=38.242408049999995pt/></p>
 
 where <img src="/tex/5b51bd2e6f329245d425b8002d7cf942.svg?invert_in_darkmode&sanitize=true" align=middle width=12.397274999999992pt height=22.465723500000017pt/> is the reflectivity factor power moment and <img src="/tex/5bc42ce9cabce66c66542c6fb09deba6.svg?invert_in_darkmode&sanitize=true" align=middle width=18.92134859999999pt height=22.465723500000017pt/> is the reflectivity factor flux.
 
 ## Application to modified gamma distributions
 The LHS of the two prognostic equations above are set to zero in order to model the steady-state vertical profile of the power moments.
+
+We assume that the ice particle size distribution is given by
+
+<p align="center"><img src="/tex/5abb53feb43b3c0c69feb4c563d77c2f.svg?invert_in_darkmode&sanitize=true" align=middle width=174.76263419999998pt height=33.81208709999999pt/></p>
+
+In addition mass and terminal fall-speeds are given by a mass-diameter relation, <img src="/tex/3463b29f51979645bdd009d021d08bff.svg?invert_in_darkmode&sanitize=true" align=middle width=98.62991654999999pt height=27.91243950000002pt/>, and a velocity-diameter relation, <img src="/tex/135693b7e2dc28abb37ba408c01cb01b.svg?invert_in_darkmode&sanitize=true" align=middle width=88.60299359999999pt height=27.91243950000002pt/>, respectively.
+
+The other useful relation is the mass growth rate of a particle, diameter <img src="/tex/78ec2b7008296ce0561cf83393cb746d.svg?invert_in_darkmode&sanitize=true" align=middle width=14.06623184999999pt height=22.465723500000017pt/>, given by <img src="/tex/4e1892eefe57fd6ff74c304a47092cc2.svg?invert_in_darkmode&sanitize=true" align=middle width=106.50084389999998pt height=27.91243950000002pt/>
+
+The ice particle size distribution can be transformed into a ice particle mass distribution by multiplying by <img src="/tex/788de61705dafb50b8de712ce988e4ad.svg?invert_in_darkmode&sanitize=true" align=middle width=19.392601799999998pt height=28.92634470000001pt/>
+
+With these assumptions the RHS of the mass power moment equation becomes
+
+<p align="center"><img src="/tex/1feb39de246d5034b01cada3bd96d0bd.svg?invert_in_darkmode&sanitize=true" align=middle width=312.51205424999995pt height=38.242408049999995pt/></p>
+
+which on integration yields
+
+<p align="center"><img src="/tex/cf6488bb3acb8a134aed97fc0400eb08.svg?invert_in_darkmode&sanitize=true" align=middle width=204.73156935pt height=34.7253258pt/></p>
+
+For the reflectivity factor power moment the RHS is
+
+<p align="center"><img src="/tex/6beedb3aa83b663a5fd044eff9caed9b.svg?invert_in_darkmode&sanitize=true" align=middle width=471.03561944999996pt height=43.19345085pt/></p>
+
+where <img src="/tex/84df98c65d88c6adf15d4645ffa25e47.svg?invert_in_darkmode&sanitize=true" align=middle width=13.08219659999999pt height=22.465723500000017pt/> is the aggregation efficiency and <img src="/tex/d906cd9791e4b48a3b848558acda5899.svg?invert_in_darkmode&sanitize=true" align=middle width=13.77859724999999pt height=22.465723500000017pt/> is a double integral involving Gauss hypergeometric functions
 
 
 ## References
