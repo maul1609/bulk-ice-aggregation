@@ -113,7 +113,9 @@ where <img src="/tex/84df98c65d88c6adf15d4645ffa25e47.svg?invert_in_darkmode&san
 ## Steady-state dependence of lambda on altitude
 Set the time derivative of the power moments, and the vertical wind to zero, and change the sign of the height derivatives so downward is positive, resulting in:
 
-<p align="center"><img src="/tex/46d3ab553294d16b54bacbf682b4a322.svg?invert_in_darkmode&sanitize=true" align=middle width=700.2739854pt height=312.34607414999994pt/></p>
+<p align="center"><img src="/tex/e9b5b3368b3151895e4f35e19c5b751f.svg?invert_in_darkmode&sanitize=true" align=middle width=675.6164514pt height=106.55110454999999pt/></p>
+
+
 
 
 
