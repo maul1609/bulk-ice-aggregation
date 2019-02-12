@@ -43,7 +43,7 @@ They found that, for aggregation only, the rate-of-change of a power moment is g
 
 where <img src="/tex/f55af2ba7087ae065bd9a49dd5ec815c.svg?invert_in_darkmode&sanitize=true" align=middle width=39.200973899999994pt height=47.6716218pt/> are binomial coefficients. 
 
->Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
+>Passarelli (1978), and Mitchell (1988) considered prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
 
 ### Mass Power Moment
 An equation describing the evolution of the mass power moment is derived from Equation 1 by multiplying by <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/> and integrating over all positive <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/>.
@@ -102,13 +102,17 @@ With these assumptions the RHS of the mass power moment equation becomes
 
 which on integration yields
 
-<p align="center"><img src="/tex/cf6488bb3acb8a134aed97fc0400eb08.svg?invert_in_darkmode&sanitize=true" align=middle width=204.73156935pt height=34.7253258pt/></p>
+<p align="center"><img src="/tex/d7351a2976593cbbc1517f171c85c8e3.svg?invert_in_darkmode&sanitize=true" align=middle width=233.0419707pt height=34.7253258pt/></p>
 
 For the reflectivity factor power moment the RHS is
 
 <p align="center"><img src="/tex/6beedb3aa83b663a5fd044eff9caed9b.svg?invert_in_darkmode&sanitize=true" align=middle width=471.03561944999996pt height=43.19345085pt/></p>
 
 where <img src="/tex/84df98c65d88c6adf15d4645ffa25e47.svg?invert_in_darkmode&sanitize=true" align=middle width=13.08219659999999pt height=22.465723500000017pt/> is the aggregation efficiency and <img src="/tex/d906cd9791e4b48a3b848558acda5899.svg?invert_in_darkmode&sanitize=true" align=middle width=13.77859724999999pt height=22.465723500000017pt/> is a double integral involving Gauss hypergeometric functions (this integral is slightly different to the integral in Equation B21 of Ferrier et al. 1994).
+
+## Steady-state dependence of lambda on altitude
+
+
 
 
 ## References
