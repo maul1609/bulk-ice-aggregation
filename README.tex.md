@@ -48,7 +48,7 @@ They found that, for aggregation only, the rate-of-change of a power moment is g
 
 where $\left(\begin{matrix}N\\i\end{matrix}\right)$ are binomial coefficients. 
 
->Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
+>Passarelli (1978), and Mitchell (1988) considered prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
 
 ### Mass Power Moment
 An equation describing the evolution of the mass power moment is derived from Equation 1 by multiplying by $m$ and integrating over all positive $m$.
@@ -126,7 +126,7 @@ RHS=n_0f\left(t,z\right)\int _0^\infty D^{\mu+\delta}\exp\left( -\lambda _0D\rig
 which on integration yields
 
 \begin{equation*}
-RHS_X=n_0f\left(t,z\right)\frac{\Gamma\left(\mu+\delta\right)}{\lambda^{\mu+\delta}}\end{equation*}
+RHS_X=n_0f\left(t,z\right)\frac{\Gamma\left(\mu+\delta+1\right)}{\lambda^{\mu+\delta+1}}\end{equation*}
 
 For the reflectivity factor power moment the RHS is
 
@@ -136,6 +136,10 @@ RHS_Z=2n_0\alpha f\left(t,z\right)\frac{\Gamma\left(\mu+\delta +\beta + 1\right)
 \end{equation*}
 
 where $E$ is the aggregation efficiency and $I_1$ is a double integral involving Gauss hypergeometric functions (this integral is slightly different to the integral in Equation B21 of Ferrier et al. 1994).
+
+## Steady-state dependence of lambda on altitude
+
+
 
 
 ## References
