@@ -1,5 +1,5 @@
-# Steady-state ice-ice aggregation
-A steady-state ice-ice aggregation model, using bulk-microphysics, written in FORTRAN
+# Steady-state ice-ice aggregation model
+>A steady-state ice-ice aggregation model, using bulk-microphysics, written in FORTRAN
 
 ## Compilation:
 gfortran should be installed on your system, then:
@@ -7,6 +7,10 @@ gfortran should be installed on your system, then:
 	Type 'make' to compile.
 
 ## Running code:
+First
+
+	Edit the namelist.in 
+
 run the code by typing the following:
 
 	single processor: ./main.exe namelist.in
@@ -31,10 +35,10 @@ The 2nd term on the RHS of Equation 1 represents the vertical transport (and sed
 The 3rd term on the RHS of Equation 1 occurs due to aggregation. Firstly, there is a gain integral, which is due to the aggregation of particles of size $m'$ with $m-m'$ to yield particles of mass $m$ (the factor of $\frac{1}{2}$ is to prevent double-counting). Secondly, there is a loss integral, which accounts for the aggregation of particles, mass $m$, with all other particles.
 
 ## Conservation of Power Moments
-Passarelli (1978) used the 1st and 2nd "mass moments" of the ice particle distribution to describe a steady-state model where ice particles sediment through the atmosphere. They used these moments because they are weighted by the larger ice particles, which can be approximated by negative exponential functions.
+>Passarelli (1978) used the 1st and 2nd "mass moments" of the ice particle distribution to describe a steady-state model where ice particles sediment through the atmosphere. They used these moments because they are weighted by the larger ice particles, which can be approximated by negative exponential functions.
 
 ### Effect of Aggregation on Power Moments
-The effect of aggregation on any moment of the distribution can be described according to Drake (1972, their Equation 3.3).
+>The effect of aggregation on any moment of the distribution can be described according to Drake (1972, their Equation 3.3).
 
 They found that, for aggregation only, the rate-of-change of a power moment is given by:
 
@@ -44,7 +48,7 @@ They found that, for aggregation only, the rate-of-change of a power moment is g
 
 where $\left(\begin{matrix}N\\i\end{matrix}\right)$ are binomial coefficients. 
 
-Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
+>Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
 
 ### Mass Power Moment
 An equation describing the evolution of the mass power moment is derived from Equation 1 by multiplying by $m$ and integrating over all positive $m$.
@@ -131,7 +135,7 @@ RHS_Z=2n_0\alpha f\left(t,z\right)\frac{\Gamma\left(\mu+\delta +\beta + 1\right)
 +\alpha^2\frac{\pi}{4\lambda _0^{4+2\left(\mu+\beta\right)+b}}aEn_0^2I_1
 \end{equation*}
 
-where $E$ is the aggregation efficiency and $I_1$ is a double integral involving Gauss hypergeometric functions
+where $E$ is the aggregation efficiency and $I_1$ is a double integral involving Gauss hypergeometric functions (this integral is slightly different to the integral in Equation B21 of Ferrier et al. 1994).
 
 
 ## References
