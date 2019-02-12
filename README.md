@@ -1,5 +1,5 @@
-# Steady-state ice-ice aggregation
-A steady-state ice-ice aggregation model, using bulk-microphysics, written in FORTRAN
+# Steady-state ice-ice aggregation model
+>A steady-state ice-ice aggregation model, using bulk-microphysics, written in FORTRAN
 
 ## Compilation:
 gfortran should be installed on your system, then:
@@ -7,6 +7,10 @@ gfortran should be installed on your system, then:
 	Type 'make' to compile.
 
 ## Running code:
+First
+
+	Edit the namelist.in 
+
 run the code by typing the following:
 
 	single processor: ./main.exe namelist.in
@@ -28,10 +32,10 @@ The 2nd term on the RHS of Equation 1 represents the vertical transport (and sed
 The 3rd term on the RHS of Equation 1 occurs due to aggregation. Firstly, there is a gain integral, which is due to the aggregation of particles of size <img src="/tex/6a0d5b419381f23bef964dd9f443238f.svg?invert_in_darkmode&sanitize=true" align=middle width=18.223061999999988pt height=24.7161288pt/> with <img src="/tex/d4288477ecfc880dc7c34959e53a674d.svg?invert_in_darkmode&sanitize=true" align=middle width=52.74735344999999pt height=24.7161288pt/> to yield particles of mass <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/> (the factor of <img src="/tex/47d54de4e337a06266c0e1d22c9b417b.svg?invert_in_darkmode&sanitize=true" align=middle width=6.552545999999997pt height=27.77565449999998pt/> is to prevent double-counting). Secondly, there is a loss integral, which accounts for the aggregation of particles, mass <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/>, with all other particles.
 
 ## Conservation of Power Moments
-Passarelli (1978) used the 1st and 2nd "mass moments" of the ice particle distribution to describe a steady-state model where ice particles sediment through the atmosphere. They used these moments because they are weighted by the larger ice particles, which can be approximated by negative exponential functions.
+>Passarelli (1978) used the 1st and 2nd "mass moments" of the ice particle distribution to describe a steady-state model where ice particles sediment through the atmosphere. They used these moments because they are weighted by the larger ice particles, which can be approximated by negative exponential functions.
 
 ### Effect of Aggregation on Power Moments
-The effect of aggregation on any moment of the distribution can be described according to Drake (1972, their Equation 3.3).
+>The effect of aggregation on any moment of the distribution can be described according to Drake (1972, their Equation 3.3).
 
 They found that, for aggregation only, the rate-of-change of a power moment is given by:
 
@@ -39,7 +43,7 @@ They found that, for aggregation only, the rate-of-change of a power moment is g
 
 where <img src="/tex/f55af2ba7087ae065bd9a49dd5ec815c.svg?invert_in_darkmode&sanitize=true" align=middle width=39.200973899999994pt height=47.6716218pt/> are binomial coefficients. 
 
-Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
+>Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
 
 ### Mass Power Moment
 An equation describing the evolution of the mass power moment is derived from Equation 1 by multiplying by <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/> and integrating over all positive <img src="/tex/0e51a2dede42189d77627c4d742822c3.svg?invert_in_darkmode&sanitize=true" align=middle width=14.433101099999991pt height=14.15524440000002pt/>.
@@ -104,7 +108,7 @@ For the reflectivity factor power moment the RHS is
 
 <p align="center"><img src="/tex/6beedb3aa83b663a5fd044eff9caed9b.svg?invert_in_darkmode&sanitize=true" align=middle width=471.03561944999996pt height=43.19345085pt/></p>
 
-where <img src="/tex/84df98c65d88c6adf15d4645ffa25e47.svg?invert_in_darkmode&sanitize=true" align=middle width=13.08219659999999pt height=22.465723500000017pt/> is the aggregation efficiency and <img src="/tex/d906cd9791e4b48a3b848558acda5899.svg?invert_in_darkmode&sanitize=true" align=middle width=13.77859724999999pt height=22.465723500000017pt/> is a double integral involving Gauss hypergeometric functions
+where <img src="/tex/84df98c65d88c6adf15d4645ffa25e47.svg?invert_in_darkmode&sanitize=true" align=middle width=13.08219659999999pt height=22.465723500000017pt/> is the aggregation efficiency and <img src="/tex/d906cd9791e4b48a3b848558acda5899.svg?invert_in_darkmode&sanitize=true" align=middle width=13.77859724999999pt height=22.465723500000017pt/> is a double integral involving Gauss hypergeometric functions (this integral is slightly different to the integral in Equation B21 of Ferrier et al. 1994).
 
 
 ## References
