@@ -42,7 +42,7 @@ They found that, for aggregation only, the rate-of-change of a power moment is g
 \frac{dM_N\left(t\right)}{dt}=\frac{1}{2}\sum _{i=1}^{N-1}\left( \begin{matrix}N\\i\end{matrix}\right)\int_0^\infty\int_0^\infty m^i m'^{N-i}k\left(m,m'\right)n\left(m,t \right)n\left(m',t \right)dm dm'
 \end{equation*} 
 
-where $\begin{matrix}N\\i\end{matrix}$ are binomial coefficients. 
+where $\left(\begin{matrix}N\\i\end{matrix}\right)$ are binomial coefficients. 
 
 Passarelli (1978) considers prognostic equations for the steady-state vertical profile of two power moments: the mass power moment and the Reflectivity factor Power Moment).
 
@@ -66,7 +66,7 @@ Integrating by parts yields
 
 So the equation describing the mass power moment is
 	\begin{equation*}
-\frac{\partial}{\partial t}X\left(t,z \right) =  \int_0 ^\infty \dot{m}n\left(m,t,z \right) dm - \frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f \right)
+\frac{\partial}{\partial t}X\left(t,z \right) + \frac{\partial}{\partial z}\left(wX\left(t,z\right) - X_f \right)=  \int_0 ^\infty \dot{m}n\left(m,t,z \right) dm 
 \end{equation*}
 
 where $X$ is the mass power moment and $X_f$ is the mass flux.
@@ -93,13 +93,45 @@ Integrating by parts yields
 
 So the equation describing the reflectivity factor power moment is
 	\begin{equation*}
-\frac{\partial}{\partial t}Z\left(t,z \right) =  \int_0 ^\infty 2m\dot{m}n\left(m,t,z \right) dm - \frac{\partial}{\partial z}\left(wZ\left(t,z\right) - Z_f \right) + \int_0^\infty\int_0^\infty m m'k\left(m,m'\right)n\left(m,t \right)n\left(m',t \right)dm dm'
+\frac{\partial}{\partial t}Z\left(t,z \right) + \frac{\partial}{\partial z}\left(wZ\left(t,z\right) - Z_f \right) =  \int_0 ^\infty 2m\dot{m}n\left(m,t,z \right) dm  + \int_0^\infty\int_0^\infty m m'k\left(m,m'\right)n\left(m,t \right)n\left(m',t \right)dm dm'
 \end{equation*}
 
 where $Z$ is the reflectivity factor power moment and $Z_f$ is the reflectivity factor flux.
 
 ## Application to modified gamma distributions
 The LHS of the two prognostic equations above are set to zero in order to model the steady-state vertical profile of the power moments.
+
+We assume that the ice particle size distribution is given by
+
+\begin{equation*}
+\frac{dN}{dD}=n_0 D^\mu \exp\left(-\lambda _0 D \right) 
+\end{equation*}
+
+In addition mass and terminal fall-speeds are given by a mass-diameter relation, $m\left(D\right)=\alpha D^\beta$, and a velocity-diameter relation, $v\left(D\right)=aD^b$, respectively.
+
+The other useful relation is the mass growth rate of a particle, diameter $D$, given by $\dot{m}=f\left(t,z\right)D^\delta$
+
+The ice particle size distribution can be transformed into a ice particle mass distribution by multiplying by $\frac{\partial D}{\partial m}$
+
+With these assumptions the RHS of the mass power moment equation becomes
+
+\begin{equation*}
+RHS=n_0f\left(t,z\right)\int _0^\infty D^{\mu+\delta}\exp\left( -\lambda _0D\right) dD
+\end{equation*}
+
+which on integration yields
+
+\begin{equation*}
+RHS_X=n_0f\left(t,z\right)\frac{\Gamma\left(\mu+\delta\right)}{\lambda^{\mu+\delta}}\end{equation*}
+
+For the reflectivity factor power moment the RHS is
+
+\begin{equation*}
+RHS_Z=2n_0\alpha f\left(t,z\right)\frac{\Gamma\left(\mu+\delta +\beta + 1\right)}{\lambda^{\mu+\delta +\beta +1}}
++\alpha^2\frac{\pi}{4\lambda _0^{4+2\left(\mu+\beta\right)+b}}aEn_0^2I_1
+\end{equation*}
+
+where $E$ is the aggregation efficiency and $I_1$ is a double integral involving Gauss hypergeometric functions
 
 
 ## References
