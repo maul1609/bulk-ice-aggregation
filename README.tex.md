@@ -138,6 +138,13 @@ RHS_Z=2n_0\alpha f\left(t,z\right)\frac{\Gamma\left(\mu+\delta +\beta + 1\right)
 where $E$ is the aggregation efficiency and $I_1$ is a double integral involving Gauss hypergeometric functions (this integral is slightly different to the integral in Equation B21 of Ferrier et al. 1994).
 
 ## Steady-state dependence of lambda on altitude
+Set the time derivative of the power moments, and the vertical wind to zero, and change the sign of the height derivatives so downward is positive, resulting in:
+
+\begin{eqnarray}
+\frac{\partial}{\partial z}X_f &=&n_0f\left(t,z\right)\frac{\Gamma\left(\mu+\delta+1\right)}{\lambda^{\mu+\delta+1}}\\
+\frac{\partial}{\partial z}Z_f &=&2n_0\alpha f\left(t,z\right)\frac{\Gamma\left(\mu+\delta +\beta + 1\right)}{\lambda^{\mu+\delta +\beta +1}}
++\alpha^2\frac{\pi}{4\lambda _0^{4+2\left(\mu+\beta\right)+b}}aEn_0^2I_1
+\end{eqnarray}
 
 
 
