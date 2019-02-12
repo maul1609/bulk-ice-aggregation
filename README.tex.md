@@ -142,8 +142,24 @@ Set the time derivative of the power moments, and the vertical wind to zero, and
 
 \begin{eqnarray}
 \frac{\partial}{\partial z}X_f &=&n_0f\left(t,z\right)\frac{\Gamma\left(\mu+\delta+1\right)}{\lambda^{\mu+\delta+1}}\\
+\therefore \\
+
+f\left(t,z\right) &=& \frac{\partial}{\partial z}X_f \frac{\lambda^{\mu+\delta+1}}{n_0\Gamma\left(\mu+\delta+1\right)}\\
+
 \frac{\partial}{\partial z}Z_f &=&2n_0\alpha f\left(t,z\right)\frac{\Gamma\left(\mu+\delta +\beta + 1\right)}{\lambda^{\mu+\delta +\beta +1}}
 +\alpha^2\frac{\pi}{4\lambda _0^{4+2\left(\mu+\beta\right)+b}}aEn_0^2I_1
+
+\text{sub (2) into (3)}\\
+
+\frac{\partial}{\partial z}Z_f &=&2n_0^2\alpha \frac{\Gamma\left(\mu+\delta +\beta + 1\right)\frac{\partial}{\partial z}X_f}{\lambda^{\beta}\Gamma\left(\delta +\mu+1\right)}
++\alpha^2\frac{\pi}{4\lambda _0^{4+2\left(\mu+\beta\right)+b}}aEn_0^2I_1\\
+
+\text{sub equation for $X$ and $X_f$ into last term}\\
+
+\frac{\partial}{\partial z}Z_f &=&2n_0^2\alpha \frac{\Gamma\left(\mu+\delta +\beta + 1\right)\frac{\partial}{\partial z}X_f}{\lambda^{\beta}\Gamma\left(\delta +\mu+1\right)}
++\frac{\pi E I_1 X_f X}{4\lambda ^2\Gamma\left(\beta+b+1+\mu \right) \Gamma\left(\beta+1+\mu \right) }
+
+
 \end{eqnarray}
 
 
