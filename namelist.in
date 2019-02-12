@@ -6,9 +6,10 @@
 	dz=1.,                  ! step size for integration (simple forward Euler)
 	lam_start=1.5616e+04,   ! initial lambda
 	chi_start=4e-4,         ! initial mass flux
-	ea=0.2,                 ! aggregation efficiency
+	ea=1.0,                 ! aggregation efficiency
 	alpha_i=0.,             ! shape factor 0==exponential distribution
 	a_i=6.96,               ! prefactor for fall-speed relation
 	b_i=0.33,               ! exponent for fall-speed relation
 	c_i=0.01853,            ! prefactor for mass-dimension relation
-	d_i=1.9/                ! exponent for mass-dimension relation
+	d_i=1.9,                ! exponent for mass-dimension relation
+	delta=1./               ! power of d for growth rate from the vapour

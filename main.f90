@@ -28,7 +28,7 @@
         integer(i4b) :: k
         real(dp) :: iice,a_i,alpha_i,b_i,c_i,d_i,a,b,f1,f2, z_start,z_end, z,&
                     dz,chi_start,lam_start,lambda,ea, &
-                    n00,mass_start,chi,n0
+                    n00,mass_start,chi,n0,delta
         logical :: integrate,passarelli
         real(dp), dimension(3) :: c=(/1._dp,2._dp,1._dp/)
 
@@ -38,7 +38,7 @@
         ! namelists                                                            !
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         namelist /input_spec/ integrate,passarelli,z_start,z_end,dz,&
-            lam_start,chi_start,ea,alpha_i,a_i,b_i,c_i,d_i
+            lam_start,chi_start,ea,alpha_i,a_i,b_i,c_i,d_i,delta
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
@@ -107,7 +107,7 @@
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
         ! calculate the initial mass - assume conserved                                  !
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
-        mass_start=c_i*n00*gamma(d_i+1._dp) / lam_start**(d_i+1._dp)
+        mass_start=c_i*n00*gamma(d_i+alpha_i+1._dp) / lam_start**(d_i+alpha_i+1._dp)
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
   
   
@@ -121,16 +121,23 @@
             do while (z >= z_end)
                 print *,z,lambda,chi
                 ! equation 16 from Mitchell 1988, without vapour growth (1st term on rhs)
-                lambda=max(lambda &
+                lambda=max(lambda + &
+                    dz*lambda*0._sp/mass_start/d_i* &
+                    (1._sp-2._sp*gamma(delta+d_i+alpha_i+1._sp)* &
+                                 gamma(d_i+alpha_i+b_i+1._sp)/ &
+                                 (gamma(delta+alpha_i+1._sp)* &
+                                  gamma(2._sp*d_i+alpha_i+b_i+1._sp))) &
                    -dz*(pi*ea*iice*chi*lambda**(d_i+b_i-1._dp)) / &
-                    (4._dp*d_i*a_i*c_i*gamma(d_i+b_i+1._dp)*gamma(2._dp*d_i+b_i+1._dp)),&
+                    (4._dp*d_i*a_i*c_i*gamma(d_i+b_i+alpha_i+1._dp)* &
+                                        gamma(2._dp*d_i+alpha_i+b_i+1._dp)),&
                     1._sp)
-                    
+                 
+                ! commented out: 
                 ! update n0 from new lambda and initial mass (conserved)
-                n0=mass_start*lambda**(d_i+1._dp)/(c_i*gamma(d_i+1._dp))
-                ! update chi from new lambda and n0
-                chi=a_i*c_i*n0*gamma(d_i+b_i+alpha_i+1._dp) / &
-                    lambda**(d_i+b_i+alpha_i+1._dp)
+                !n0=mass_start*lambda**(d_i+alpha_i+1._dp)/(c_i*gamma(d_i+alpha_i+1._dp))
+                ! update chi_f, the mass flux, from new lambda and n0
+                !chi=a_i*c_i*n0*gamma(d_i+b_i+alpha_i+1._dp) / &
+                !    lambda**(d_i+b_i+alpha_i+1._dp)
                     
                 z = z - dz
             end do
