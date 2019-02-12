@@ -111,6 +111,9 @@ For the reflectivity factor power moment the RHS is
 where <img src="/tex/84df98c65d88c6adf15d4645ffa25e47.svg?invert_in_darkmode&sanitize=true" align=middle width=13.08219659999999pt height=22.465723500000017pt/> is the aggregation efficiency and <img src="/tex/d906cd9791e4b48a3b848558acda5899.svg?invert_in_darkmode&sanitize=true" align=middle width=13.77859724999999pt height=22.465723500000017pt/> is a double integral involving Gauss hypergeometric functions (this integral is slightly different to the integral in Equation B21 of Ferrier et al. 1994).
 
 ## Steady-state dependence of lambda on altitude
+Set the time derivative of the power moments, and the vertical wind to zero, and change the sign of the height derivatives so downward is positive, resulting in:
+
+<p align="center"><img src="/tex/d61aecc7b8dd5a32013c42b855de6685.svg?invert_in_darkmode&sanitize=true" align=middle width=593.8758375pt height=84.49414379999999pt/></p>
 
 
 
