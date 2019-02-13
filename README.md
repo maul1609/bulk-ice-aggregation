@@ -113,10 +113,17 @@ where <img src="/tex/84df98c65d88c6adf15d4645ffa25e47.svg?invert_in_darkmode&san
 ## Steady-state dependence of lambda on altitude
 Set the time derivative of the power moments, and the vertical wind to zero, and change the sign of the height derivatives so downward is positive, resulting in:
 
-<p align="center"><img src="/tex/df4d01564a9ce559f78f8f473cf45a8b.svg?invert_in_darkmode&sanitize=true" align=middle width=593.8758375pt height=84.49414379999999pt/></p>
+<p align="center"><img src="/tex/604a21914d0a0fdef22339178904f622.svg?invert_in_darkmode&sanitize=true" align=middle width=689.3477745pt height=79.562637pt/></p>
+
+>rearrange Equation 1 for <img src="/tex/190083ef7a1625fbc75f243cffb9c96d.svg?invert_in_darkmode&sanitize=true" align=middle width=9.81741584999999pt height=22.831056599999986pt/>, and substitute into Equation 2. Eliminate <img src="/tex/0ba57fd9f8ab88844631a2d9be8c6c29.svg?invert_in_darkmode&sanitize=true" align=middle width=16.41942389999999pt height=14.15524440000002pt/> from the last term (the special integral) by substituting <img src="/tex/06946a0d85dc86d3ff6e8027e8e7afa7.svg?invert_in_darkmode&sanitize=true" align=middle width=21.318618749999988pt height=22.465723500000017pt/> and <img src="/tex/cbfb1b2a33b28eab8a3e59464768e810.svg?invert_in_darkmode&sanitize=true" align=middle width=14.908688849999992pt height=22.465723500000017pt/> into this term.
+
+>Next, write <img src="/tex/5bc42ce9cabce66c66542c6fb09deba6.svg?invert_in_darkmode&sanitize=true" align=middle width=18.92134859999999pt height=22.465723500000017pt/> in terms of <img src="/tex/06946a0d85dc86d3ff6e8027e8e7afa7.svg?invert_in_darkmode&sanitize=true" align=middle width=21.318618749999988pt height=22.465723500000017pt/> and find the derivative wrt height (using product rule). Substitute this expression into the LHS.
 
 
+After a little bit of algebra, the final result is:
+<p align="center"><img src="/tex/81b0ffeec00a92c2fd4090174112ef46.svg?invert_in_darkmode&sanitize=true" align=middle width=695.8426134pt height=44.77515405pt/></p> 
 
+which is the equation used here.
 
 
 
