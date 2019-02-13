@@ -150,7 +150,7 @@ Set the time derivative of the power moments, and the vertical wind to zero, and
 
 After a little bit of algebra, the final result is:
 \begin{equation*}
-\frac{\partial}{\partial z}\lambda = \frac{\lambdaX_f^'}{X_f\beta}\left( 1-\frac{2\Gamma\left( \delta+\beta+\mu+1\right)\Gamma\left( \beta+\mu+b+1\right)}{\Gamma\left( \delta+\mu+1\right)\Gamma\left( 2\beta+\mu+b+1\right)}\right)-
+\frac{\partial}{\partial z}\lambda = \frac{\lambda X_f^'}{X_f\beta}\left( 1-\frac{2\Gamma\left( \delta+\beta+\mu+1\right)\Gamma\left( \beta+\mu+b+1\right)}{\Gamma\left( \delta+\mu+1\right)\Gamma\left( 2\beta+\mu+b+1\right)}\right)-
 \frac{\pi E I_1 X_f \lambda ^{\beta+b-1}}{4\beta \Gamma\left(\beta+\mu+b+1 \right)\Gamma\left(2\beta+\mu+b+1 \right)}
 \end{equation*} 
 
