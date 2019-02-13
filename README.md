@@ -113,7 +113,7 @@ where <img src="/tex/84df98c65d88c6adf15d4645ffa25e47.svg?invert_in_darkmode&san
 ## Steady-state dependence of lambda on altitude
 Set the time derivative of the power moments, and the vertical wind to zero, and change the sign of the height derivatives so downward is positive, resulting in:
 
-<p align="center"><img src="/tex/604a21914d0a0fdef22339178904f622.svg?invert_in_darkmode&sanitize=true" align=middle width=689.3477745pt height=79.562637pt/></p>
+<p align="center"><img src="/tex/b470af69fe80ddef2169e74d2bbb28e5.svg?invert_in_darkmode&sanitize=true" align=middle width=593.8758375pt height=84.49414379999999pt/></p>
 
 >rearrange Equation 1 for <img src="/tex/190083ef7a1625fbc75f243cffb9c96d.svg?invert_in_darkmode&sanitize=true" align=middle width=9.81741584999999pt height=22.831056599999986pt/>, and substitute into Equation 2. Eliminate <img src="/tex/0ba57fd9f8ab88844631a2d9be8c6c29.svg?invert_in_darkmode&sanitize=true" align=middle width=16.41942389999999pt height=14.15524440000002pt/> from the last term (the special integral) by substituting <img src="/tex/06946a0d85dc86d3ff6e8027e8e7afa7.svg?invert_in_darkmode&sanitize=true" align=middle width=21.318618749999988pt height=22.465723500000017pt/> and <img src="/tex/cbfb1b2a33b28eab8a3e59464768e810.svg?invert_in_darkmode&sanitize=true" align=middle width=14.908688849999992pt height=22.465723500000017pt/> into this term.
 
