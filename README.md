@@ -121,7 +121,7 @@ Set the time derivative of the power moments, and the vertical wind to zero, and
 
 
 After a little bit of algebra, the final result is:
-<p align="center"><img src="/tex/d931ec01ab7a71e6d8772e8664b8053d.svg?invert_in_darkmode&sanitize=true" align=middle width=695.8426134pt height=44.77515405pt/></p> 
+<p align="center"><img src="/tex/acf594061f5dd637d5ca132be0a8da27.svg?invert_in_darkmode&sanitize=true" align=middle width=699.1133539499999pt height=44.77515405pt/></p> 
 
 which is the equation used here.
 
