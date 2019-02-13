@@ -140,14 +140,21 @@ where $E$ is the aggregation efficiency and $I_1$ is a double integral involving
 ## Steady-state dependence of lambda on altitude
 Set the time derivative of the power moments, and the vertical wind to zero, and change the sign of the height derivatives so downward is positive, resulting in:
 
-\begin{eqnarray}
-\frac{\partial}{\partial z}X_f &=&n_0f\left(t,z\right)\frac{\Gamma\left(\mu+\delta+1\right)}{\lambda^{\mu+\delta+1}} \\
-\frac{\partial}{\partial z}Z_f &=&2n_0\alpha f\left(t,z\right)\frac{\Gamma\left(\mu+\delta +\beta + 1\right)}{\lambda^{\mu+\delta +\beta +1}}
-+\alpha^2\frac{\pi}{4\lambda _0^{4+2\left(\mu+\beta\right)+b}}aEn_0^2I_1
+\begin{eqnarray} \frac{\partial}{\partial z}X_f &=&n_0f\left(t,z\right)\frac{\Gamma\left(\mu+\delta+1\right)}{\lambda^{\mu+\delta+1}}\ \frac{\partial}{\partial z}Z_f &=&2n_0\alpha f\left(t,z\right)\frac{\Gamma\left(\mu+\delta +\beta + 1\right)}{\lambda^{\mu+\delta +\beta +1}} +\alpha^2\frac{\pi}{4\lambda _0^{4+2\left(\mu+\beta\right)+b}}aEn_0^2I_1 
 \end{eqnarray}
 
+>rearrange Equation 1 for $f$, and substitute into Equation 2. Eliminate $n_0$ from the last term (the special integral) by substituting $X_f$ and $X$ into this term.
+
+>Next, write $Z_f$ in terms of $X_f$ and find the derivative wrt height (using product rule). Substitute this expression into the LHS.
 
 
+After a little bit of algebra, the final result is:
+\begin{equation*}
+\frac{\partial}{\partial z}\lambda = \frac{\lambdaX_f^'}{X_f\beta}\left( 1-\frac{2\Gamma\left( \delta+\beta+\mu+1\right)\Gamma\left( \beta+\mu+b+1\right)}{\Gamma\left( \delta+\mu+1\right)\Gamma\left( 2\beta+\mu+b+1\right)}\right)-
+\frac{\pi E I_1 X_f \lambda ^{\beta+b-1}}{4\beta \Gamma\left(\beta+\mu+b+1 \right)\Gamma\left(2\beta+\mu+b+1 \right)}
+\end{equation*} 
+
+which is the equation used here.
 
 
 
