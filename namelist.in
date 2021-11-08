@@ -12,4 +12,4 @@
 	b_i=0.33,               ! exponent for fall-speed relation
 	c_i=0.01853,            ! prefactor for mass-dimension relation
 	d_i=1.9,                ! exponent for mass-dimension relation
-	delta=1./               ! power of d for growth rate from the vapour
+	delta=1.0/               ! power of d for growth rate from the vapour
